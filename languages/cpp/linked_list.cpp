@@ -12,9 +12,10 @@ void traverse(Node *head) {
   auto h = head;
 
   while (h != nullptr) {
-    std::cout << h->data << "\n";
+    std::cout << h->data << " ";
     h = h->next;
   }
+  std::cout << "\n";
 }
 
 inline void LinkedListStack() {
