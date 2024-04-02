@@ -2,7 +2,7 @@
 
 struct TreeNode {
   TreeNode() : data(-1), left(nullptr), right(nullptr) {}
-  TreeNode(int d) : data(d), left(nullptr), right(nullptr) {}
+  explicit TreeNode(int d) : data(d), left(nullptr), right(nullptr) {}
 
   int data;
   TreeNode *left;
