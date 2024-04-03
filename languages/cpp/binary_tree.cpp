@@ -15,7 +15,7 @@ void inorder(TreeNode *root) {
   }
 
   inorder(root->left);
-  std::cout << root->data << "\n";
+  std::cout << root->data << " ";
   inorder(root->right);
 }
 
