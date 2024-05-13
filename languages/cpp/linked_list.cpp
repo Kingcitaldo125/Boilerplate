@@ -1,47 +1,47 @@
 #include <iostream>
 
 struct Node {
-  Node() : data(-1), next(nullptr) {}
-  explicit Node(int d) : data(d), next(nullptr) {}
+    Node() : data(-1), next(nullptr) {}
+    explicit Node(int d) : data(d), next(nullptr) {}
 
-  int data;
-  Node *next;
+    int data;
+    Node *next;
 };
 
 void traverse(Node *head) {
-  auto h = head;
+    auto h = head;
 
-  while (h != nullptr) {
-    std::cout << h->data << " ";
-    h = h->next;
-  }
-  std::cout << "\n";
+    while (h != nullptr) {
+        std::cout << h->data << " ";
+        h = h->next;
+    }
+    std::cout << "\n";
 }
 
 inline void LinkedListStack() {
-  Node head(1);
-  Node next(2);
-  Node next_next(3);
+    Node head(1);
+    Node next(2);
+    Node next_next(3);
 
-  head.next = &next;
-  next.next = &next_next;
+    head.next = &next;
+    next.next = &next_next;
 
-  traverse(&head);
+    traverse(&head);
 }
 
 inline void LinkedListHeap() {
-  Node *head = new Node(1);
-  Node *next = new Node(2);
-  Node *next_next = new Node(3);
+    Node *head = new Node(1);
+    Node *next = new Node(2);
+    Node *next_next = new Node(3);
 
-  head->next = next;
-  next->next = next_next;
+    head->next = next;
+    next->next = next_next;
 
-  traverse(head);
+    traverse(head);
 
-  delete next_next;
-  delete next;
-  delete head;
+    delete next_next;
+    delete next;
+    delete head;
 }
 
 int main() { return 0; }
