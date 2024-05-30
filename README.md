@@ -1,2 +1,2 @@
 # Boilerplate
-Boilerplate C++ code ready to be reused
+Boilerplate code ready to be reused
