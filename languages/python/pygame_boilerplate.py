@@ -14,7 +14,7 @@ def main(winx=800, winy=600):
 	done = False
 
 	while not done:
-		clock.tick(10)
+		clock.tick(30)
 		events = pygame.event.get()
 
 		for e in events:
